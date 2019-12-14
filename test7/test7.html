@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript">
+    var timer;
+    var min = 40;
+    var max = 80;
+    var min2=1000;
+    var max2=1600;
+
+    function onOver() {
+      timer = setInterval(random, 1500);
+      random2();
+    }
+
+    function onOut() {
+      clearInterval(timer);
+    }
+
+    function random() {
+      var h_r1 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("h_rand_1",h_r1);
+      document.getElementById("h_rand_1").innerHTML = h_r1 + "도";
+
+      var g_r1 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("g_rand_1",g_r1);
+      document.getElementById("g_rand_1").innerHTML = g_r1 + "도";
+      var g_r2 = Math.floor((Math.random() * (max2 - min2 + 1)) + min2);
+      randomcolor2("g_rand_2",g_r2);
+      document.getElementById("g_rand_2").innerHTML = g_r2 + "RPM";
+
+      var c_r1 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("c_rand_1",c_r1);
+      document.getElementById("c_rand_1").innerHTML = c_r1 + "도";
+      var c_r2 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("c_rand_2",c_r2);
+      document.getElementById("c_rand_2").innerHTML = c_r2 + "도";
+      var c_r3 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("c_rand_3",c_r3);
+      document.getElementById("c_rand_3").innerHTML = c_r3 + "도";
+      var c_r4 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("c_rand_4",c_r4);
+      document.getElementById("c_rand_4").innerHTML = c_r4 + "도";
+      var c_r5 = Math.floor((Math.random() * (max - min + 1)) + min);
+      randomcolor("c_rand_5",c_r5);
+      document.getElementById("c_rand_5").innerHTML = c_r5 + "도";
+    }
+
+    function random2() {
+      var h_r2 = Math.round(Math.random() * 2000);
+      document.getElementById("h_rand_2").innerHTML = h_r2 + "시간";
+      var h_r3 = Math.round(Math.random() * 400);
+      document.getElementById("h_rand_3").innerHTML = h_r3 + "GB";
+    }
+    function randomcolor(my_id,random_n){
+      var rand_id=document.getElementById(my_id); 
+      if(random_n<50){
+         rand_id.style.color="blue";
+       }
+      else if(random_n>=50 && random_n<=70){
+        rand_id.style.color="green";
+      }
+      else{
+        rand_id.style.color="red";
+      }
+    }
+    function randomcolor2(my_id,random_n){
+      var rand_id=document.getElementById(my_id); 
+      if(random_n<1200){
+         rand_id.style.color="blue";
+       }
+      else if(random_n>=1200 && random_n<=1400){
+        rand_id.style.color="green";
+      }
+      else{
+        rand_id.style.color="red";
+      }
+    }
+  </script>
+  <meta charset="utf-8">
+  <title>undefined</title>
+  <meta name="generator" content="Google Web Designer 7.1.1.1210">
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-img-koya {
+      position: absolute;
+      left: 10.97%;
+      top: 17.98%;
+      width: 178px;
+      height: 181px;
+      transform-origin: 88.8586px 90.2682px 0px;
+    }
+    .gwd-img-ol4c {
+      position: absolute;
+      width: 181px;
+      height: 203px;
+      transform-origin: 90.4739px 101.539px 0px;
+      top: 18%;
+      left: 40%;
+    }
+    .gwd-img-1dhl {
+      position: absolute;
+      left: 69.99%;
+      top: 21.2%;
+      width: 163px;
+      height: 157px;
+      transform-origin: 81.2942px 78.9311px 0px;
+    }
+    .gwd-div-9z8j {
+      position: absolute;
+      border-style: solid;
+      border-width: 5px;
+      width: 296px;
+      height: 312px;
+      transform-origin: 153.016px 160.992px 0px;
+      left: 7%;
+      top: 48%;
+    }
+    .gwd-span-9rrc {
+      position: absolute;
+      text-align: center;
+      width: 251px;
+      height: 41px;
+      transform-origin: 189.245px 120.722px 0px;
+      font-size: 25px;
+      font-weight: bold;
+      left: 10%;
+      top: 7%;
+    }
+    .gwd-span-1ifj {
+      position: absolute;
+      height: 39px;
+      width: 54px;
+      transform-origin: 27px 19.5px 0px;
+      font-size: 20px;
+      font-weight: bold;
+      left: 15%;
+      top: 26%;
+    }
+    .gwd-span-7u0q {
+      position: absolute;
+      height: 39px;
+      font-size: 20px;
+      font-weight: bold;
+      width: 101px;
+      transform-origin: 50.5px 19.5px 0px;
+      left: 8%;
+      top: 46%;
+    }
+    .gwd-span-1gsr {
+      position: absolute;
+      height: 34px;
+      font-weight: bold;
+      width: 96px;
+      transform-origin: 48px 17px 0px;
+      left: 10%;
+      top: 68%;
+      font-size: 20px;
+    }
+    .gwd-div-l35d {
+      left: 37%;
+    }
+    .gwd-span-1i3f {
+      left: 13%;
+      top: 53%;
+    }
+    .gwd-span-ps4e {
+      left: 21%;
+      top: 32%;
+    }
+    .gwd-div-185l {
+      left: 66%;
+    }
+    .gwd-span-18la {
+      width: 135px;
+      height: 35px;
+      transform-origin: 67.2811px 17.664px 0px;
+      left: 12%;
+      top: 45%;
+    }
+    .gwd-span-1b0p {
+      position: absolute;
+      width: 135.515px;
+      height: 35px;
+      left: 36px;
+      top: 175px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .gwd-span-fak3 {
+      position: absolute;
+      width: 137.031px;
+      height: 39.687px;
+      left: 36.0077px;
+      top: 210.008px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .gwd-span-zmtd {
+      position: absolute;
+      width: 135.492px;
+      height: 34.0071px;
+      left: 36.0117px;
+      top: 249.683px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .gwd-span-1fxk {
+      position: absolute;
+      width: 69.2031px;
+      height: 35.5776px;
+      left: 126px;
+      top: 81px;
+    }
+    .gwd-p-1p55 {
+      position: absolute;
+      width: 123.203px;
+      height: 39.5776px;
+      font-weight: bold;
+      left: 42.43%;
+      top: 26%;
+      font-size: 20px;
+    }
+    .gwd-p-sxtk {
+      position: absolute;
+      width: 100.703px;
+      height: 40.171px;
+      font-weight: bold;
+      left: 52.4%;
+      top: 46%;
+      font-size: 20px;
+    }
+    .gwd-p-26c0 {
+      position: absolute;
+      width: 100.703px;
+      height: 36.531px;
+      left: 52.4%;
+      top: 68%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .gwd-p-1xom {
+      position: absolute;
+      width: 99.4222px;
+      height: 39.8589px;
+      top: 32%;
+      left: 47%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .gwd-p-alt2 {
+      position: absolute;
+      width: 100.797px;
+      height: 39.328px;
+      left: 52.4%;
+      top: 53%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .gwd-p-3gds {
+      position: absolute;
+      width: 96px;
+      height: 34.8589px;
+      font-size: 20px;
+      font-weight: bold;
+      left: 124px;
+      top: 101px;
+    }
+    .gwd-p-11uj {
+      position: absolute;
+      font-size: 20px;
+      font-weight: bold;
+      width: 100px;
+      height: 35px;
+      transform-origin: 455.776px 14.967px 0px;
+      left: 57.77%;
+      top: 44.87%;
+    }
+    .gwd-p-1q1v {
+      position: absolute;
+      font-size: 20px;
+      font-weight: bold;
+      width: 95px;
+      height: 32px;
+      transform-origin: 455.776px 17.8582px 0px;
+      left: 57.77%;
+      top: 56.09%;
+    }
+    .gwd-p-tf0f {
+      position: absolute;
+      width: 92.966px;
+      height: 39.403px;
+      font-size: 20px;
+      font-weight: bold;
+      left: 58.46%;
+      top: 67.31%;
+    }
+    .gwd-p-ex46 {
+      position: absolute;
+      width: 93.9704px;
+      height: 33.49px;
+      font-size: 20px;
+      font-weight: bold;
+      left: 58.46%;
+      top: 79.94%;
+    }
+    .gwd-span-7f32 {
+      font-size: 25px;
+    }
+    .gwd-span-vxqs {
+      font-size: 20px;
+    }
+    .gwd-span-1ucf {
+      font-size: 20px;
+    }
+    .gwd-span-lac8 {
+      position: absolute;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      width: 123px;
+      height: 46px;
+      transform-origin: 61.6016px 23px 0px;
+      left: 13.97%;
+      top: 8.04%;
+    }
+    .gwd-span-1if9 {
+      left: 43%;
+      top: 8%;
+    }
+    .gwd-span-1eai {
+      left: 71.36%;
+      top: 8.9%;
+    }
+    .gwd-span-1ch3 {
+      width: 174px;
+      transform-origin: 87.1202px 23px 0px;
+      top: 8%;
+      left: 11.44%;
+    }
+    .gwd-span-yoxg {
+      top: 8.04%;
+      width: 178px;
+      transform-origin: 125.962px 22.8672px 0px;
+      left: 40.18%;
+    }
+  </style>
+</head>
+
+<body class="htmlNoPages" onload="onOver();">
+  <img src="assets/harddisk.png" id="harddisk" class="gwd-img-koya">
+  <img src="assets/graphics-card.png" id="graphics-card" class="gwd-img-ol4c">
+  <img src="assets/cpu.png" id="cpu" class="gwd-img-1dhl">
+  <div class="gwd-div-9z8j"><span class="gwd-span-9rrc gwd-span-7f32">MX500 SSD 500GB</span><span class="gwd-span-1ifj gwd-span-vxqs">온도:</span><span class="gwd-span-7u0q gwd-span-1ucf">사용시간 :</span><span class="gwd-span-1gsr">남은용량 :</span>
+    <p class="gwd-p-1p55" id="h_rand_1"><br>
+      
+    </p>
+    <p class="gwd-p-sxtk" id="h_rand_2"><br>
+      
+    </p>
+    <p class="gwd-p-26c0" id="h_rand_3"><br>
+      
+    </p>
+  </div>
+  <div class="gwd-div-9z8j gwd-div-l35d"><span class="gwd-span-9rrc">RX470 4GB</span><span class="gwd-span-1ifj gwd-span-ps4e">온도 :</span><span class="gwd-span-7u0q gwd-span-1i3f">쿨러RPM :</span>
+    <p class="gwd-p-1xom" id="g_rand_1"><br>
+      
+    </p>
+    <p class="gwd-p-alt2" id="g_rand_2"><br>
+      
+    </p>
+  </div>
+  <div class="gwd-div-9z8j gwd-div-l35d gwd-div-185l"><span class="gwd-span-9rrc">RYZEN 2200G</span><span class="gwd-span-1ifj gwd-span-ps4e">온도 :</span><span class="gwd-span-7u0q gwd-span-1i3f gwd-span-18la">코어 1 온도 :<br></span>
+    <span class="gwd-span-1b0p">코어 2 온도 :&nbsp;</span><span class="gwd-span-fak3">코어 3 온도 :&nbsp;</span><span class="gwd-span-zmtd">코어 4 온도 :&nbsp;</span>
+    <p class="gwd-p-3gds" id="c_rand_1"><br>
+      
+    </p>
+    <p class="gwd-p-11uj" id="c_rand_2"><br>
+      
+    </p>
+    <p class="gwd-p-1q1v" id="c_rand_3"><br>
+      
+    </p>
+    <p class="gwd-p-tf0f" id="c_rand_4"><br>
+      
+    </p>
+    <p class="gwd-p-ex46" id="c_rand_5"><br>
+      
+    </p>
+  </div>
+  <span class="gwd-span-lac8 gwd-span-1ch3">하드디스크</span><span class="gwd-span-lac8 gwd-span-1if9 gwd-span-yoxg">그래픽카드</span><span class="gwd-span-lac8 gwd-span-1if9 gwd-span-1eai">CPU</span></body>
+
+</html>
